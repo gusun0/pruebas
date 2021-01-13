@@ -1,4 +1,4 @@
-*{
+{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
@@ -128,20 +128,13 @@ font-weight: bold;
 .container-clausulas div:nth-child(even){
 background: #3cb371;
 color: white;
-transition: 0.3s;	
-opacity: 0.7;
-}
-
-.container-clausulas div:nth-child(even){
-background: #3cb371;
-color: white;
-transition: 0.3s;	
-opacity: 0.7;
+transition: 0.4s;	
 }
 
 
 .container-clausulas div:nth-child(even):hover{
-opacity: 1;
+background: white;
+color: #3cb371;
 }
 
 
