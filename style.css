@@ -1,0 +1,253 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.grid {
+    display: grid;
+
+    /* Again the template property defines areas of the same name,
+     * but this time positioned differently to better suit a
+     * landscape orientation. */
+    grid-template-areas: "title"
+                         "menu";
+
+    grid-template-columns: auto;
+    grid-template-rows: auto ;
+}
+
+
+/* The grid-area property places a grid item into a named
+ * area of the grid. */
+.title{ 
+grid-area: title;
+display: flex;
+justify-content: center;
+background-color: #20aa1a;
+height: 45vh;
+color: white;
+font-size: 2rem;
+font-family: Arial,sans-serif;
+
+}
+.menu{ 
+grid-area: menu;
+height: 45vh;
+background-color: white;
+color: black;
+}
+
+/* container clausulas */
+
+.container-clausulas{
+display: grid;
+grid-template-areas: "uno"
+					 "dos"	
+					 "tres"
+					 "cuatro"
+					 "cinco"
+					 "seis"
+					 "siete";
+grid-template-columns: auto;
+grid-template-rows: repeat(7,1fr);
+}
+
+.uno{
+grid-area: uno;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 4em;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+.dos{
+grid-area: dos;
+display: flex;
+justify-content: center;
+align-items: center;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+.tres{
+grid-area: tres;
+display: flex;
+justify-content: center;
+align-items: center;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+.cuatro{
+grid-area: cuatro;
+display: flex;
+justify-content: center;
+align-items: center;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+.cinco{
+grid-area: cinco;
+display: flex;
+justify-content: center;
+align-items: center;
+text-transform: uppercase;
+font-weight: bold;
+}
+.seis{
+grid-area: seis;
+display: flex;
+justify-content: center;
+align-items: center;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+.siete{
+grid-area: siete;	;
+display: flex;
+justify-content: center;
+align-items: center;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+
+.container-clausulas div:nth-child(even){
+background: #3cb371;
+color: white;	
+}
+
+
+/* container clausulas */
+
+
+.title-principal{
+font-weight: normal;
+font-size: 1.2em;
+}
+
+/* ICON SEARCH */
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+div.search-bar {
+  display: flex;
+}	
+
+form.search {
+  display: inline-flex;
+  max-width: 0;
+  overflow: hidden;
+  transition: 0.5s ease all;
+
+}
+
+ form.search.open {
+    max-width: 9em;
+ }
+
+input.search {
+  margin: 0 0.4em;
+  border: none;
+  background: none;
+  border-bottom: 1px solid black;
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.9em;
+  min-width: 2em;
+  width: 70vw;
+  max-width: 20em;
+  
+}
+
+input.search:focus {
+    outline: none;
+  }
+
+.btn {
+  display: inline-block;
+  background: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 0.25em;
+  font-size: 0.9em;
+  min-width: 2em;
+  
+}
+.btn:focus {
+    outline: none;
+    color: red;
+    background: #black;
+  }
+
+span.search-icon {
+
+  display: inline-block;
+  position: relative;
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+   
+}
+
+
+span.search-icon:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    top: 11px;
+    right: 24px;
+    left: 20px;
+    border: 0.10em solid black;
+  }
+  
+ span.search-icon:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    height: 0.10em;
+    width: 40%;
+    background: black;
+    top: 50%;
+    transform-origin: 100% 50%;
+    transform: rotateZ(-45deg);
+  }
+
+
+/* Stuff here is for centering */
+.body-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ICON SEARCH */
+
+
+/* media queries */
+@media screen and (min-width:458px){
+.title-principal{
+font-weight: normal;
+font-size: 2em;
+}
+
+ form.search.open {
+    max-width: 40em;
+ }
+
+}
