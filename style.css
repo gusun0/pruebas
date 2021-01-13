@@ -125,7 +125,21 @@ font-weight: bold;
 
 .container-clausulas div:nth-child(even){
 background: #3cb371;
-color: white;	
+color: white;
+transition: 0.3s;	
+opacity: 0.7;
+}
+
+.container-clausulas div:nth-child(even){
+background: #3cb371;
+color: white;
+transition: 0.3s;	
+opacity: 0.7;
+}
+
+
+.container-clausulas div:nth-child(even):hover{
+opacity: 1;
 }
 
 
