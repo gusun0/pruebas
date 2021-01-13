@@ -30,7 +30,9 @@ body {
 grid-area: title;
 display: flex;
 justify-content: center;
-background-color: #20aa1a;
+background-image: url(uno.jpg);
+background-repeat: no-repeat;
+background-size: cover;
 height: 45vh;
 color: white;
 font-size: 2rem;
